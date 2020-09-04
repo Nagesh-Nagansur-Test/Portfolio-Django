@@ -5,7 +5,7 @@ class Home(models.Model):
 	title=models.CharField(max_length=50)
 	discription=models.TextField()
 	image=models.ImageField(upload_to="portfolio_app/images/")
-	link=models.URLField()
+	link=models.URLField(blank=True)
 
 
 	def __str__(self):

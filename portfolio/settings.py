@@ -25,7 +25,7 @@ SECRET_KEY = '41urfwr#i+iz$g*n-uoswz=mbf2v1n2xl(i=35euhq^df!m_pa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['nagansurnagesh.pythonanywhere.com']
+ALLOWED_HOSTS = ['nagansurnagesh.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -131,6 +131,5 @@ MEDIA_URL =  '/media/'
 
 try:
     from . local_settings import *
-
 except ImportError:
     print("looks like no local file you must be on live site")
